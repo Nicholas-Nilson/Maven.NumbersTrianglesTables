@@ -15,6 +15,7 @@ public class NumberUtilities {
 
 
     public static String getOddNumbers(int start, int stop) {
+
         StringBuilder str = new StringBuilder();
         for (int i = start; i < stop; i++) {
             if (i % 2 != 0) {
@@ -27,7 +28,7 @@ public class NumberUtilities {
 
 
     public static String getSquareNumbers(int start, int stop, int step) {
-        return null;
+        return NumberUtilities.getExponentiations(start, stop, step, 2);
     }
 
     public static String getRange(int stop) {
@@ -44,13 +45,14 @@ public class NumberUtilities {
     }
 
     public static String getRange(int start, int stop) {
-        String result = "";
-        int numToPrint = start;
-        for (int i = start; i < stop; i++) {
-            result += numToPrint;
-            numToPrint++;
-        }
-        return result;
+       return NumberUtilities.getRange (start, stop, 1);
+//        String result = "";
+//        int numToPrint = start;
+//        for (int i = start; i < stop; i++) {
+//            result += numToPrint;
+//            numToPrint++;
+//        }
+//        return result;
     }
 
 
@@ -74,6 +76,12 @@ public class NumberUtilities {
 
 
     public static String getExponentiations(int start, int stop, int step, int exponent) {
-        return null;
+        StringBuilder str = new StringBuilder();
+        for (int i = start; i < stop; i += step) {
+            Integer numToAppend = (int) Math.pow(i, exponent);
+            str.append(numToAppend);
+        }
+        String result = str.toString();
+        return result;
     }
 }
