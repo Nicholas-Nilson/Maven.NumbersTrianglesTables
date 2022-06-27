@@ -31,18 +31,21 @@ public class TriangleUtilities {
     }
 
     public static String getSmallTriangle() {
-        int numberOfRows = 4;
-        String row = "";
-        String triangle = "";
-        String newLine = "\n";
-        char star = '*';
 
-        for (int i = 1; i <= numberOfRows; i++) {
-            row = row + star;
-            triangle = triangle + row + newLine;
-        }
-
-        return triangle;
+        //CALLS THE PREVIOUSLY WRITTEN CODE.
+        return TriangleUtilities.getTriangle( 5);
+//        int numberOfRows = 4;
+//        String row = "";
+//        String triangle = "";
+//        String newLine = "\n";
+//        char star = '*';
+//
+//        for (int i = 1; i <= numberOfRows; i++) {
+//            row = row + star;
+//            triangle = triangle + row + newLine;
+//        }
+//
+//        return triangle;
     }
 
     public static String getLargeTriangle() {
