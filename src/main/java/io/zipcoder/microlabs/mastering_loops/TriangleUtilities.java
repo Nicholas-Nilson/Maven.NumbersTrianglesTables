@@ -31,10 +31,32 @@ public class TriangleUtilities {
     }
 
     public static String getSmallTriangle() {
-        return null;
+        int numberOfRows = 4;
+        String row = "";
+        String triangle = "";
+        String newLine = "\n";
+        char star = '*';
+
+        for (int i = 1; i <= numberOfRows; i++) {
+            row = row + star;
+            triangle = triangle + row + newLine;
+        }
+
+        return triangle;
     }
 
     public static String getLargeTriangle() {
-        return null;
+        int numberOfRows = 9;
+        String row = "";
+        String triangle = "";
+        String newLine = "\n";
+        char star = '*';
+
+        for (int i = 1; i <= numberOfRows; i++) {
+            row = row + star;
+            triangle = triangle + row + newLine;
+        }
+
+        return triangle;
     }
 }
