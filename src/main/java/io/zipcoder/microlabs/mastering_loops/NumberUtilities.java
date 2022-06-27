@@ -16,17 +16,44 @@ public class NumberUtilities {
         return null;
     }
 
-    public static String getRange(int start) {
-        return null;
+    public static String getRange(int stop) {
+        String result = "";
+        int numToPrint = 0;
+        for (int i = 0; i < stop; i++) {
+            result += numToPrint;
+            numToPrint++;
+        }
+
+        return result;
     }
 
     public static String getRange(int start, int stop) {
-        return null;
+        String result = "";
+        int numToPrint = start;
+        for (int i = start; i < stop; i++) {
+            result += numToPrint;
+            numToPrint++;
+        }
+        return result;
     }
 
 
     public static String getRange(int start, int stop, int step) {
-        return null;
+//        String result = "";
+//        int numToPrint = start;
+//        for (int i = start; i < stop; i += step) {
+//            result += numToPrint;
+//            numToPrint += step;
+//        }
+//        return result;
+
+        //String builder method
+        StringBuilder str = new StringBuilder();
+        for (int i = start; i < stop; i += step) {
+            str.append(i);
+        }
+        String result = str.toString();
+        return result;
     }
 
 
