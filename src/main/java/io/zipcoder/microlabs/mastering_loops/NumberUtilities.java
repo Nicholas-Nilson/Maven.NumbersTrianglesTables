@@ -32,7 +32,7 @@ public class NumberUtilities {
     }
 
     public static String getRange(int stop) {
-        return NumberUtilities.getRange (1, stop);
+        return NumberUtilities.getRange (0, stop);
 
 //        String result = "";
 //        int numToPrint = 0;
