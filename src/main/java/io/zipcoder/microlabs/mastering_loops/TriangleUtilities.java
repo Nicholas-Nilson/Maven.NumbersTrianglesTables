@@ -49,17 +49,18 @@ public class TriangleUtilities {
     }
 
     public static String getLargeTriangle() {
-        int numberOfRows = 9;
-        String row = "";
-        String triangle = "";
-        String newLine = "\n";
-        char star = '*';
-
-        for (int i = 1; i <= numberOfRows; i++) {
-            row = row + star;
-            triangle = triangle + row + newLine;
-        }
-
-        return triangle;
+        return TriangleUtilities.getTriangle( 10);
+//        int numberOfRows = 9;
+//        String row = "";
+//        String triangle = "";
+//        String newLine = "\n";
+//        char star = '*';
+//
+//        for (int i = 1; i <= numberOfRows; i++) {
+//            row = row + star;
+//            triangle = triangle + row + newLine;
+//        }
+//
+//        return triangle;
     }
 }
